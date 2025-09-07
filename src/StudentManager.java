@@ -36,6 +36,11 @@ public class StudentManager {
                 .min(Comparator.comparingDouble(Student::getGrade));
     }
 
+    public Optional<Student> getTopStudent() {
+        return list.stream()
+                .max(Comparator.comparingDouble(Student::getGrade));
+    }
+
     public List<Student> getStudentsSortedByGrade() {
         return list.stream()
                 .sorted(Comparator.comparingDouble(Student::getGrade))
