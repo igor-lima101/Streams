@@ -1,4 +1,4 @@
-public class Streams {
+public class Student {
 
     private String name;
     private double grade;
@@ -19,7 +19,7 @@ public class Streams {
         this.grade = grade;
     }
 
-    public Streams(String name, double grade) {
+    public Student(String name, double grade) {
         this.name = name;
         this.grade = grade;
     }
